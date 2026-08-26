@@ -1,0 +1,31 @@
+header {
+    background-color: var(--cor-carvao);
+    padding: 10px 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 300px;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+
+    list-style: none;
+}
+
+nav a {
+    color: var(--cor-creme);
+
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--cor-ambar);
+}
