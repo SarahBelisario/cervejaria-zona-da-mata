@@ -1,31 +1,131 @@
 header {
     background-color: var(--cor-carvao);
     padding: 10px 60px;
+    position: relative;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 24px;
+}
+
+header > a {
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    flex-shrink: 0;
 }
 
 header img {
-    width: 300px;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
-nav ul {
+header nav ul {
     display: flex;
+    align-items: center;
     gap: 40px;
 
     list-style: none;
 }
 
-nav a {
+header nav a {
     color: var(--cor-creme);
+
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
 
     font-family: Arial, sans-serif;
     font-size: 18px;
     text-decoration: none;
 }
 
-nav a:hover {
+header nav a:hover {
     color: var(--cor-ambar);
+}
+
+header a:focus-visible,
+.menu-botao:focus-visible {
+    outline: 2px solid var(--cor-ambar);
+    outline-offset: 4px;
+}
+
+.menu-botao {
+    display: none;
+    width: 44px;
+    height: 44px;
+    padding: 9px;
+    flex-shrink: 0;
+
+    background-color: transparent;
+    border: 1px solid var(--cor-ambar);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-botao span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--cor-creme);
+}
+
+@media (max-width: 900px) {
+    header {
+        padding: 16px 24px;
+    }
+
+    header > a {
+        width: min(240px, calc(100% - 68px));
+    }
+
+    .menu-botao:not([hidden]) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 4px;
+    }
+
+    header nav a {
+        display: flex;
+        padding: 8px 12px;
+    }
+
+    header.menu-interativo nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 12px 24px;
+        z-index: 10;
+
+        background-color: var(--cor-carvao);
+        border-top: 1px solid var(--cor-verde);
+    }
+
+    header.menu-interativo.menu-aberto nav {
+        display: block;
+    }
+
+    header:not(.menu-interativo) {
+        flex-direction: column;
+    }
+
+    header:not(.menu-interativo) > a {
+        width: 240px;
+    }
+
+    header:not(.menu-interativo) nav {
+        width: 100%;
+    }
 }

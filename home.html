@@ -9,19 +9,24 @@
   </head>
 
   <body>
-    <header>
-      <a href="#inicio">
-        <img src="assets/titulo-zona-da-mata.png" alt="Cervejaria Zona da Mata"/></a>
+<header>
+  <a href="#inicio"><img src="assets/titulo-zona-da-mata.png" alt="Cervejaria Zona da Mata" /></a>
 
-      <nav aria-label="Navegação principal">
-        <ul>
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#cervejas">Cervejas</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
+  <button class="menu-botao" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal" hidden>
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav id="menu-principal" aria-label="Navegação principal">
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#cervejas">Cervejas</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
 
     <main>
 
@@ -49,6 +54,6 @@
 
     </main>
 
-    <script src="js/script.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
