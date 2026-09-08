@@ -1,0 +1,122 @@
+.cervejas {
+    background-color: var(--cor-creme);
+    padding: 20px 60px 40px;
+}
+
+.cervejas__titulo {
+    color: var(--cor-verde);
+    margin-bottom: 24px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    font-family: Georgia, serif;
+    font-size: clamp(28px, 3vw, 38px);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.cervejas__titulo::before,
+.cervejas__titulo::after {
+    content: "";
+    height: 1px;
+    background-color: var(--cor-verde);
+    opacity: 0.4;
+    flex: 1;
+}
+
+.cervejas__lista {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+
+    list-style: none;
+}
+
+.cervejas__lista > li {
+    min-width: 0;
+}
+
+.cerveja {
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid var(--cor-verde);
+    border-radius: 12px;
+
+    display: grid;
+    grid-template-columns: 45% minmax(0, 1fr);
+}
+
+.cerveja__imagem {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cerveja__conteudo {
+    padding: 20px;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.cerveja__conteudo h3 {
+    color: var(--cor-verde);
+
+    font-family: Georgia, serif;
+    font-size: 24px;
+    line-height: 1.2;
+    overflow-wrap: break-word;
+}
+
+.cerveja__conteudo p {
+    color: var(--cor-carvao);
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media (max-width: 1100px) {
+    .cervejas__lista {
+        grid-template-columns: 1fr;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .cerveja {
+        grid-template-columns: 40% minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .cervejas {
+        padding: 20px 24px 32px;
+    }
+
+    .cervejas__titulo {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cerveja {
+        grid-template-columns: 1fr;
+    }
+
+    .cerveja__imagem {
+        height: auto;
+        min-height: 0;
+    }
+
+    .cerveja__conteudo {
+        padding: 20px;
+    }
+}
