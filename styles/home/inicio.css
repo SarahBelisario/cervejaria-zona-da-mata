@@ -1,0 +1,75 @@
+.inicio {
+  background-color: var(--cor-carvao);
+  background-image: linear-gradient(to right, var(--cor-carvao), transparent), url("../../assets/img/banner-home-com-logo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--cor-creme);
+  padding: 50px 60px;
+  min-height: 350px;
+
+  display: flex;
+  align-items: center;
+}
+
+.inicio__conteudo {
+  width: 100%;
+  max-width: 650px;
+}
+
+.inicio h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(36px, 4vw, 60px);
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.inicio p {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  max-width: 480px;
+  margin-bottom: 24px;
+}
+
+.inicio__botao {
+  background-color: var(--cor-ambar);
+  color: var(--cor-carvao);
+  padding: 12px 28px;
+  border: 2px solid var(--cor-ambar);
+  border-radius: 5px;
+
+  display: inline-block;
+
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.inicio__botao:hover {
+  background-color: var(--cor-carvao);
+  color: var(--cor-creme);
+}
+
+.inicio__botao:focus-visible {
+  outline: 3px solid var(--cor-creme);
+  outline-offset: 4px;
+}
+
+@media (max-width: 768px) {
+  .inicio {
+    padding: 40px 24px;
+  }
+
+  .inicio p {
+    font-size: 18px;
+  }
+
+  .inicio__botao {
+    font-size: 18px;
+  }
+}
