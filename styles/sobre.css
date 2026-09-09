@@ -1,0 +1,161 @@
+.pagina-sobre {
+    background-color: var(--cor-creme);
+}
+
+.sobre-historia,
+.sobre-lugares {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 60px;
+    color: var(--cor-carvao);
+}
+
+.sobre-historia__introducao {
+    margin-bottom: 36px;
+    text-align: center;
+}
+
+.sobre-historia__introducao h1 {
+    margin-bottom: 12px;
+    color: var(--cor-verde);
+    font-size: clamp(36px, 4vw, 60px);
+    line-height: 1.1;
+}
+
+.sobre-historia__introducao p,
+.sobre-lugares__descricao {
+    font-size: clamp(18px, 2vw, 20px);
+    line-height: 1.5;
+}
+
+.sobre-historia__conteudo {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    gap: 40px;
+}
+
+.sobre-historia__imagem {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border: 1px solid var(--cor-verde);
+    border-radius: 12px;
+}
+
+.sobre-historia__texto {
+    min-width: 0;
+}
+
+.sobre-historia__texto h2 {
+    margin-bottom: 20px;
+}
+
+.sobre-historia__texto p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.sobre-historia__texto p + p {
+    margin-top: 20px;
+}
+
+.sobre-lugares {
+    padding-top: 8px;
+}
+
+.sobre-lugares h2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.sobre-lugares h2::before,
+.sobre-lugares h2::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background-color: var(--cor-verde);
+    opacity: 0.4;
+}
+
+.sobre-lugares__descricao {
+    margin: 12px 0 24px;
+    text-align: center;
+}
+
+.sobre-lugares__lista {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    list-style: none;
+}
+
+.sobre-lugares__lista > li {
+    min-width: 0;
+}
+
+.lugar {
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid var(--cor-verde);
+    border-radius: 12px;
+}
+
+.lugar__imagem {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.lugar__legenda {
+    padding: 18px 12px;
+    color: var(--cor-verde);
+    font-family: var(--fonte-titulo);
+    font-size: clamp(20px, 2vw, 26px);
+    font-weight: bold;
+    line-height: 1.3;
+    text-align: center;
+}
+
+.sobre-lugares__aviso {
+    margin-top: 12px;
+    line-height: 1.5;
+    text-align: right;
+}
+
+@media (max-width: 900px) {
+    .sobre-historia,
+    .sobre-lugares {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+    .sobre-historia__conteudo {
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sobre-historia {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .sobre-historia__conteudo,
+    .sobre-lugares__lista {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-lugares__lista {
+        max-width: 560px;
+        margin: 0 auto;
+    }
+
+    .sobre-lugares h2 {
+        gap: 12px;
+    }
+}
