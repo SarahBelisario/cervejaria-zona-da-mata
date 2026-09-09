@@ -1,0 +1,35 @@
+.consumo-responsavel {
+    background-color: var(--cor-ambar);
+    color: var(--cor-creme);
+    padding: 8px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    text-align: center;
+}
+
+.consumo-responsavel img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.consumo-responsavel p {
+    margin: 0;
+
+    font-family: Georgia, serif;
+    font-size: clamp(16px, 2vw, 22px);
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+@media (max-width: 480px) {
+    .consumo-responsavel {
+        padding: 8px 16px;
+        gap: 8px;
+    }
+}
