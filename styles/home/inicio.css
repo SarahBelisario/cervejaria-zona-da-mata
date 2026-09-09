@@ -18,14 +18,12 @@
 }
 
 .inicio h1 {
-  font-family: Georgia, serif;
   font-size: clamp(36px, 4vw, 60px);
   line-height: 1.1;
   margin-bottom: 20px;
 }
 
 .inicio p {
-  font-family: Arial, sans-serif;
   font-size: 20px;
   line-height: 1.5;
   max-width: 480px;
@@ -41,7 +39,6 @@
 
   display: inline-block;
 
-  font-family: Arial, sans-serif;
   font-size: 20px;
   line-height: 1.4;
   text-align: center;

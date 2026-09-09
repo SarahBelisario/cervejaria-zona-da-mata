@@ -9,4 +9,23 @@
     --cor-ambar: #c98218;
     --cor-creme: #f5e9d2;
     --cor-verde: #384a36;
+
+    --fonte-texto: Arial, sans-serif;
+    --fonte-titulo: Georgia, serif;
+}
+
+body {
+    font-family: var(--fonte-texto);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--fonte-titulo);
+}
+
+h2 {
+    color: var(--cor-verde);
+    font-size: clamp(28px, 3vw, 38px);
+    line-height: 1.2;
 }

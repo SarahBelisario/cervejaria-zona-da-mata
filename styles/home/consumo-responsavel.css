@@ -21,7 +21,7 @@
 .consumo-responsavel p {
     margin: 0;
 
-    font-family: Georgia, serif;
+    font-family: var(--fonte-titulo);
     font-size: clamp(16px, 2vw, 22px);
     font-weight: bold;
     line-height: 1.3;

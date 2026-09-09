@@ -26,16 +26,11 @@
 }
 
 .sobre h2 {
-  color: var(--cor-verde);
-  font-family: Georgia, serif;
-  font-size: clamp(28px, 3vw, 38px);
-  line-height: 1.2;
   margin-bottom: 12px;
 }
 
 .sobre p {
   color: var(--cor-carvao);
-  font-family: Arial, sans-serif;
   font-size: 17px;
   line-height: 1.6;
 }

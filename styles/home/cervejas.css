@@ -4,16 +4,12 @@
 }
 
 .cervejas__titulo {
-    color: var(--cor-verde);
     margin-bottom: 24px;
 
     display: flex;
     align-items: center;
     gap: 20px;
 
-    font-family: Georgia, serif;
-    font-size: clamp(28px, 3vw, 38px);
-    line-height: 1.2;
     text-align: center;
 }
 
@@ -70,7 +66,6 @@
 .cerveja__conteudo h3 {
     color: var(--cor-verde);
 
-    font-family: Georgia, serif;
     font-size: 24px;
     line-height: 1.2;
     overflow-wrap: break-word;
@@ -79,7 +74,6 @@
 .cerveja__conteudo p {
     color: var(--cor-carvao);
 
-    font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
 }
