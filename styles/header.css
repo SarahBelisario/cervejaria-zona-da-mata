@@ -56,12 +56,12 @@ header nav a::after {
 }
 
 header nav a:hover,
-header nav a[aria-current="location"] {
+header nav a[aria-current="page"] {
     color: var(--cor-ambar);
 }
 
 header nav a:hover::after,
-header nav a[aria-current="location"]::after {
+header nav a[aria-current="page"]::after {
     transform: scaleX(1);
 }
 
